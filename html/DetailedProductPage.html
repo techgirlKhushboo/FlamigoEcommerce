@@ -1,77 +1,336 @@
 <!doctype html>
 <html lang="en">
-  <head>
-   meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <title>Home</title>
-    <link rel="stylesheet" href="product.css">
+<head>
+  
+  <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>DetailedProductPage</title>
-  </head>
-  <body>
-    <div class="container container-fluid">
-       <------ Navbar, Search Bar, ---- Top Content ---->
-        <div class="row">
-          
-        </div>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <title>Home</title>
+  <link rel="stylesheet" href="../css/style.css">
 
-        <----- Individual Product Images and Details ------>
-        <div class="row">
-           <div class="container container-fluid">
-              <div class="row">
-                 <div class="container container-fluid">
-                     <div class="row">
-                         <div class="col-md-2">
-                            <div class="container container-fluid">
-                                <div class="row">
-                                    <!-- Images lined ones -->
-                                    <img src="../images/Rectangle 82.png" alt="Dhoop Cones Image">
-                                </div>
-                                <div class="row">
-                                  <!-- Images lined ones -->
-                                  <img src="../images/Rectangle 82.png" alt="Dhoop Cones Image">
-                                </div>
-                                <div class="row">
-                                  <!-- Images lined ones -->
-                                  <img src="../images/Rectangle 82.png" alt="Dhoop Cones Image">
-                                </div>
-                                <div class="row">
-                                  <!-- Images lined ones -->
-                                  <img src="../images/Rectangle 82.png" alt="Dhoop Cones Image">
-                                </div>
-                            </div>
-                         </div>
-                         <div class="col-md-4">
-                            <!-- Big Image -->
-                            <img src="../images/Rectangle 82.png" alt="Dhoop Cones Image">
-                         </div>
-                         <div class="col-md-6">
-                            <!-- Product Description -->
-                            <p>
-                               Auto-layout for flexbox grid columns also means you can set the width of one column and have the sibling columns automatically resize around it. You may use predefined grid classes (as shown below), grid mixins, or inline widths. Note that the other columns will resize no matter the width of the center column.
-                            </p>
-                         </div>
-                     </div>
-                 </div>
+  <title>DetailedProductPage</title>
+</head>
+
+<body>
+<!--Alert-->
+  <div class="alert alert-danger alert-dismissible fade show" role="alert" style="text-align:center;">
+    <strong>QUICK BUY!</strong> Get up tp 25% off on All Stones.
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
+<!--Logo Nav-->
+<div class="container container-fluid" id="logonav">
+  <!--Left Side Logo-->
+  <div class="row"> 
+      <div class="col-lg-2">
+          <a href="#" target="_blank" class="float-start">
+              <div class="d-flex">
+                  <img src="../images/Group.png" height="35" />
+                  <h5 style="color:#FA5C98;"><b>PINK</b></h5>
+                  <h5 style="color:black;"><b>FLAMINGO</b></h4>
               </div>
-              <div class="row">
-                
+          </a>
+      </div>
+      <!--Center Search-->
+      <div class="col-lg-7">
+          <div class="d-flex form-inputs">
+              <input class="form-control" type="text" placeholder="Search any product... ">
+              <button id="button-addon5" type="submit" class="btn btn-link"> <i class="fa fa-search"> </i> </button>
               </div>
-              <div class="row">
-                 
-              </div>
-           </div> 
-        </div>
+      </div>
+      <!--Right Elements-->
+      <div class="col-md-3">
+          <button type="button" class="btn btn-link "><i class="fas fa-shopping-cart m-1 me-md-2" ></i></button>
+          <button type="button" class="btn btn-link text-secondary"><i class="fas fa-user-alt m-1 me-md-2"></i>SIGN IN/SIGN UP</button>
+          </div>
+      </div>
+  </div>
 
-         <----- Footer Section -------> 
-        <div class="row">
-            
-        </div>
+<!--NavBar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Products
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+
+                    <a class="dropdown-item dropdown-toggle" id="dhoopconesmenulink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false" href="#">Dhoop Cones </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dhoopconesmenulink">
+                        <a class="dropdown-item" href="./product-sub-category.html">Jar Cones</a>
+                        <a class="dropdown-item" href="#">Chandan Bamboo Dhoop</a>
+                        <a class="dropdown-item" href="#">Backflow Cone</a>
+                        <a class="dropdown-item" href="#">Pooja Thali Sets</a>
+                        <a class="dropdown-item" href="#">Shankh</a>
+                        <a class="dropdown-item" href="#">Kalash</a>
+                        <a class="dropdown-item" href="#">Book Resets</a>
+                    </div>
+                    <a class="dropdown-item" href="#">Incense Holder</a>
+                    <a class="dropdown-item" href="#">Yantras</a>
+                    <a class="dropdown-item" href="#">Incense Sticks</a>
+                    <a class="dropdown-item" href="#">Pooja Thali Sets</a>
+                    <a class="dropdown-item" href="#">Shankh</a>
+                    <a class="dropdown-item" href="#">Kalash</a>
+                    <a class="dropdown-item" href="#">Book Resets</a>
+                </div>
+
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Services
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Courses <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Blogs <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Videos <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Contact Us<span class="sr-only">(current)</span></a>
+            </li>
+
+        </ul>
     </div>
-  </body>
+</nav>
+
+<!--Badge-->
+<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="./product-sub-category.html">Products</a></li>
+    <li class="breadcrumb-item"><a href="./product-sub-category.html">Jar Cones</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Dhoop Cones</li>
+  </ol>
+</nav>
+
+  <!--Product Descriptions in Detail-->
+  <div class="container container-fluid">
+        <div class="row">
+          <div class="container container-fluid">
+            <div class="row">
+              <div class="container container-fluid">
+                <div class="row">
+                  <div class="col-md-2">
+                    <div class="container container-fluid">
+                      <div class="row">
+                        <!-- Images lined ones -->
+                        <img src="../images/image 11.png" alt="Dhoop Cones Image">
+                      </div>
+                      <div class="row">
+                        <!-- Images lined ones -->
+                        <img src="../images/image 12.png" alt="Dhoop Cones Image">
+                      </div>
+                      <div class="row">
+                        <!-- Images lined ones -->
+                        <img src="../images/image 13.png" alt="Dhoop Cones Image">
+                      </div>
+                      <div class="row">
+                        <!-- Images lined ones -->
+                        <img src="../images/image 14.png" alt="Dhoop Cones Image">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <!-- Big Image -->
+                    <img src="../images/Rectangle 82.png" alt="Dhoop Cones Image">
+                  </div>
+                  <div class="col-md-6">
+                    <!-- Product Description -->
+                    <p>Brand: Rashmi Divine Solutions</p>
+                    <p>Scent: Floral</p>
+                    <p>Availability: Only 2 in Stock</p>
+                    <h3><b>Lavender Dhoop Cone Sticks Pack of 100-Piece/Jar by Rashmi Divine</b></h3>
+                    <div> <!--Rating-->
+                      <i class="fa fa-star star text-warning"></i>
+                      <i class="fa fa-star star text-warning"></i>
+                      <i class="fa fa-star star text-warning"></i>
+                      <i class="fa fa-star  star text-warning"></i>
+                    </div>
+                    <ul type="disc">
+                      <li>Lavender Dhoop sticks activate your senses and relax the nerves, making you less anxious. They
+                        also hold the power to cleanse the air.</li>
+                      <li>Lavender Crafted out of the finest quality ingredients, this leaves a magnificent and alluring
+                        fragrance and adds more to your spiritual time</li>
+                      <li>Lavender Dhoop sticks are Charcoal Free Dhoop Sticks with soothing fragrances which don't
+                        cause eye irritation and headache </li>
+                    </ul>
+                    <hr>
+                    <p>USD(incl. of all taxes)</p>
+                    <h4><b>$4.05</b></h4>
+                    <!--Quantity-->
+                    <button type="btn btn-white border border-secondary" class="btn">
+                    <div class="row">
+                    <div class="col-sm-3"><i class="fa-solid fa-plus"></i></div>
+                    <div class="col-md-6">1</div>
+                    <div class="col-sm-3"><i class="fa-solid fa-minus"></i></div>
+                  </div>
+                </button>
+                <a href="#" class="btn btn-warning shadow-0"> Buy now </a>
+                <a href="#" class="btn btn-primary shadow-0"> <i class="me-1 fa fa-shopping-basket"></i> Add to cart </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+
+              </div>
+              <div class="row">
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+  <!--Footer-->
+        <footer class="text-center text-lg-start text-dark " style="background-color: #FA5C98 ; color: white">
+          <!-- Section: Social media -->
+          <section class="d-flex justify-content-between p-4 text-white" style="background-color: #FA5C98;color: white">
+              <!-- Left -->
+              <div class="me-5">
+                  <span>Get connected with us on social networks:</span>
+              </div>
+              <!-- Left -->
+  
+              <!-- Right -->
+              <div>
+                  <a href="" class="text-white me-4">
+                      <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="" class="text-white me-4">
+                      <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="" class="text-white me-4">
+                      <i class="fab fa-google"></i>
+                  </a>
+                  <a href="" class="text-white me-4">
+                      <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="" class="text-white me-4">
+                      <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a href="" class="text-white me-4">
+                      <i class="fab fa-github"></i>
+                  </a>
+              </div>
+              <!-- Right -->
+          </section>
+          <!-- Section: Social media -->
+  
+          <!-- Section: Links  -->
+          <section class="text-white">
+              <div class="container text-center text-md-start mt-5 ">
+                  <!-- Grid row -->
+                  <div class="row mt-3">
+                      <!-- Grid column -->
+                      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                          <!-- Links -->
+                          <!-- Grid column -->
+                          <h6 class="text-uppercase fw-bold">Contact Us</h6>
+                          <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                              style="width: 60px; background-color: #7c4dff; height: 2px" />
+                          <p><i class="fas fa-home mr-3"></i> Demo Store</p>
+                          <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
+                          <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                          <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                      </div>
+  
+  
+                      <!-- Grid column -->
+                      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 ">
+                          <!-- Links -->
+                          <h6 class="text-uppercase fw-bold">Information</h6>
+                          <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                              style="width: 60px; background-color: #7c4dff; height: 2px" />
+                          <p>
+                              <a href="#!" class="text-dark">Privacy</a>
+                          </p>
+                          <p>
+                              <a href="#!" class="text-dark">Refund Policy</a>
+                          </p>
+                          <p>
+                              <a href="#!" class="text-dark">Shipping Policy</a>
+                          </p>
+                          <p>
+                              <a href="#!" class="text-dark">Terms of Services </a>
+                          </p>
+                      </div>
+                      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                          <!-- Links -->
+                          <h6 class="text-uppercase fw-bold">Account</h6>
+                          <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                              style="width: 60px; background-color: #7c4dff; height: 2px" />
+                          <p>
+                              <a href="#!" class="text-dark">Search</a>
+                          </p>
+                          <p>
+                              <a href="#!" class="text-dark">About Us</a>
+                          </p>
+                          <p>
+                              <a href="#!" class="text-dark">Faq</a>
+                          </p>
+                          <p>
+                              <a href="#!" class="text-dark">Contact </a>
+                          </p>
+                      </div>
+                      <!-- Grid column -->
+  
+                      <!-- Grid column -->
+                      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                          <!-- Links -->
+                          <h6 class="text-uppercase fw-bold">Quick links</h6>
+                          <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                              style="width: 60px; background-color: #7c4dff; height: 2px" />
+                          <p>
+                              <a href="#!" class="text-dark">Incense Sticks</a>
+                          </p>
+                          <p>
+                              <a href="#!" class="text-dark">Shankh</a>
+                          </p>
+                          <p>
+                              <a href="#!" class="text-dark">Kalash</a>
+                          </p>
+                          <p>
+                              <a href="#!" class="text-dark">Incense Holders</a>
+                          </p>
+                          <p>
+                              <a href="#!" class="text-dark">Cone Dhoop</a>
+                          </p>
+                      </div>
+                  </div>
+                  <!-- Grid row -->
+              </div>
+          </section>
+      </footer>
+
+</body>
+
 </html>
